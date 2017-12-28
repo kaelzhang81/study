@@ -30,7 +30,7 @@ func TestFrenchPalindrome(t *testing.T) {
 func TestCanalPalindrome(t *testing.T) {
 	input := "A man, a plan, a canal: Panama"
 	if !IsPalindrome(input) {
-		t.Errorf(`IIsPalindrome(%q) = false`, input)
+		t.Errorf(`IsPalindrome(%q) = false`, input)
 	}
 }
 
@@ -78,7 +78,13 @@ func TestRandomPalindromes(t *testing.T) {
 	input := randomPalindrome(rn)
 	for i:=0; i< 1000; i++ {
 		if !IsPalindrome(input) {
-			t.Errorf(`IIsPalindrome(%q) = false`, input)
+			t.Errorf(`IsPalindrome(%q) = false`, input)
 		}
+	}
+}
+
+func BenchmarkCanalPalindrome(b *testing.B) {
+	for i:=0; i< b.N; i++{
+		IsPalindrome("A man, a plan, a canal: Panama")
 	}
 }
