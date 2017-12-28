@@ -30,7 +30,34 @@ func TestFrenchPalindrome(t *testing.T) {
 func TestCanalPalindrome(t *testing.T) {
 	input := "A man, a plan, a canal: Panama"
 	if !IsPalindrome(input) {
-		t.Errorf(`IIsPalindrome(%s) = false`, input)
+		t.Errorf(`IIsPalindrome(%q) = false`, input)
+	}
+}
+
+func TestTableDrivenPalindrome(t *testing.T){
+	table := [] struct{
+		input string
+		want bool
+	}{
+		{"", true},
+		{"a", true},
+		{"aa", true},
+		{"ab", false},
+		{"kayak", true},
+		{"detartrated", true},
+		{"A man, a plan, a canal: Panama", true},
+		{"Evil I did dwell; lewd did I live.", true},
+		{"Able was I ere I saw Elba", true},
+		{"été", true},
+		{"Et se resservir, ivresse reste.", true},
+		{"palindrome", false}, // non-palindrome
+		{"desserts", false}, // semi-palindrome
+	}
+
+	for _, test := range table{
+		if IsPalindrome(test.input) != test.want{
+			t.Errorf(`IsPalindrome(%q) = %v`, test.input, test.want)
+		}
 	}
 }
 
@@ -51,7 +78,7 @@ func TestRandomPalindromes(t *testing.T) {
 	input := randomPalindrome(rn)
 	for i:=0; i< 1000; i++ {
 		if !IsPalindrome(input) {
-			t.Errorf(`IIsPalindrome(%s) = false`, input)
+			t.Errorf(`IIsPalindrome(%q) = false`, input)
 		}
 	}
 }
