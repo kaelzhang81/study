@@ -1,8 +1,11 @@
-# 处理器
-Handlers provide configuration data for individual adapters,
-# 模版
-templates determine exactly what kind of data different adapters want to consume at runtime,
-# 实例
-instances let operators prepare this data, 
-# 规则
-rules direct the data to one or more handlers.
+# 处理器：配置适配器
+向单个适配器提供配置数据
+
+# 模版：适配器输入规格
+确定不同的适配器在运行时要使用的数据类型
+
+# 实例：属性映射
+让运维人员准备这些数据
+
+# 规则：传送数据给适配器
+将数据导向一个或多个handler。
