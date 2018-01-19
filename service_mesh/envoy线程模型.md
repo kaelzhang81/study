@@ -1,3 +1,5 @@
+https://blog.envoyproxy.io/envoy-threading-model-a8d44b922310
+
 1.集群管理器是Envoy中的组件，用于管理所有已知的上游集群，CDS API，SDS / EDS API，DNS和主动（带外）健康检查。它负责创建包括发现的主机以及健康状况的每个上游群集的最终一致的视图。
 2.运行状况检查程序会执行主动运行状况检查，并将健康状况更改报告回群集管理器。
 3.执行CDS / SDS / EDS / DNS以确定群集成员资格。状态更改会报告给集群管理器。
