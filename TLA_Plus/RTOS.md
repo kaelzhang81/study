@@ -24,5 +24,43 @@ In the course of the formal modeling we also discovered weaknesses in the tradit
 
 Finally, by generalization, also memory allocation has been approached like a resource locking service. In combination with the Packet Pool, this opens new possibilities for a safe and secure management of memory. E.g. the OpenComRTOS architecture is free from buffer overflow by design.
 
+# Results obtained on real execution targets
 
+We shortly summarize the results obtained. Although fully written in ANSI-C (except for the task context switch), the kernel could be reduced to less than 1 Kbytes single processor and 2 Kbytes with multi-processor support (measured on a 16bit Melexis
+microcontroller). A sample application with two tasks and one Port required just 1230 bytes of program memory and 226 bytes of data memory (static and dynamic). More information is available in [ 4].
+
+# Formal verification
+
+This project would have been incomplete if we had not attempted a formal verification of the source code. In the end this proved to be quite straightforward because the orthogonal and clean architecture allowed to check each service using a similar pattern. Following issues however must be mentioned:
+- We did not find tools and methods that allowed to verify our asynchronous and concurrent design(inevitable for a RTOS) at the source code level. Tools only exist for static and synchronous programs [9][10]
+- It was practically impossible but also unnecessary to verify the kernel as a whole. Hence we verified the algorithms for each service class independently. Given the orthogonality of protocol based architecture (by using packets), this is sufficient.
+- The hardest part remained to find all properties to check for. A lot of these properties look rather trivial at first sight and our human brain has a tendency to overlook them. 
+- The final issue is related to the programming in C itself. It is clear that this language is a major source of errors. Hence, some errors were found at the programming level that no formal verification would ever find.
+- However, the fact that the formal modeling helped a lot in achieving such a clean and orthogonal architecture, verification as well as at the abstract level by using a formal model checker as well as at the language level was a lot easier, because the complexity is minimized and the code size is much smaller than comparable hand written code.
+
+# Future developments and research
+
+Above we already identified the need for the model checkers to detect the minimal critical sections. Another area of research is how to maintain consistency between the formal model and the implementation. This will require that the formal model can be used as a reference and requires that the source is generated rather than
+written by the software engineer.
+
+Future OpenComRTOS developments will focus on adding more safety and security properties to a SW/HW co-design pair of OpenComRTOS and processor. Formal modeling should contribute in identifying minimum architectures that still are providing safety and security in the resource constrained domain of deeply embedded systems.
+
+Another area of interest is to find a better way to separate orthogonally the priority based scheduling from the logical behavior of the kernel entities. E.g. the use of priority inheritance support results in this code being mixed up in the manipulation of the data structures (e.g. to sort waiting lists). This makes the code more convoluted to read and understand while the impact is only on the timely behavior of the application.
+
+# conclude
+The OpenComRTOS project has shown that even for software domains often associated with ‘black art’ programming, formal modeling works very well. The resulting software is not only very robust and maintainable but also very performing in size and timings and inherently safer than standard implementation architectures. Its use however must be integrated with a global systems engineering approach as the process of incremental development and modeling is as important as using the formal model checker itself. The use of formal modeling has resulted in many improvements of the RTOS properties.
+
+Formal modeling and formal verification have proven to be very powerful engineering tools and hence it can not be emphasized enough how many problems in the software world can be avoided by a systematic use from the very beginning.
+
+#
+1. OpenComRTOS architectural designdocument on www.OpenLicenseSociety.org
+2. TLA+/TLC home page on http://research.microsoft.com/users/lamport/tla/tla.html
+3. INCOSE www.incose.org
+4. Open License Society www.OpenLicenseSociety.org
+5. www.Melexis.com
+6. www.verisoft.de
+7. www.spin.org
+8. www.misra.org
+9. Bruno Blanchet, Patrick Cousot, Radhia Cousot, Jérôme Feret, Laurent Mauborgne, Antoine Miné, David Monniaux & Xavier Rival. Design and Implementation of a Special-Purpose Static Program Analyzer for Safety-Critical Real-Time Embedded Software, invited chapter. In The Essence of Computation: Complexity, Analysis, Transformation. Essays Dedicated to Neil D. Jones, T. Mogensen and D.A. Schmidt and I.H. Sudborough (Editors). Lecture Notes in Computer Science 2566, pp. 85—108, Springer. . http://www.astree.ens.fr/
+10. Clarke, Edmund and Kroening, Daniel and Lerda, Flavio, A Tool for Checking {ANSI-C} Programs, Tools and Algorithms for the Construction and Analysis of Systems (TACAS 2004), Springer http://www.cprover.org/cbmc/
 
