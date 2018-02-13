@@ -52,7 +52,7 @@ The OpenComRTOS project has shown that even for software domains often associate
 
 Formal modeling and formal verification have proven to be very powerful engineering tools and hence it can not be emphasized enough how many problems in the software world can be avoided by a systematic use from the very beginning.
 
-#
+# REFERENCES
 1. OpenComRTOS architectural designdocument on www.OpenLicenseSociety.org
 2. TLA+/TLC home page on http://research.microsoft.com/users/lamport/tla/tla.html
 3. INCOSE www.incose.org
