@@ -2,5 +2,5 @@
 活性(liveness)是程序能按预期完成它的工作.对于顺序程序指程序能正常终止.对于并发程序指每个进程能得到它所要求的服务; 或进程总能进入临界段; 或送出的消息总能到达目的进程, 活性深深受到执行机构调度策略的影响
 公平性(fairness)指在有限进展的假设下没有一个进程处于死等状态.
     无条件公平性:调度策略如能保证每个无条件的原子功能均能执行
-    弱公平性:在具有条件原子动作时, 若条件原子动作能执行并依然保持无条件公平性, 则为弱公平性
-    强公平性:条件原子动作一定能执行, 则为强公平性
+    弱公平性:在具有条件原子动作时, 若条件原子动作能执行并依然保持无条件公平性, 则为弱公平性(Weak fairness says that when an action is (continuously)  enabled, the action will be (eventually) executed. )
+    强公平性:条件原子动作一定能执行, 则为强公平性(Strong fairness relaxes the assumption that the action needs to be continuously enabled to be applied. Instead, it requires it to be enabled infinitely often (possible with intervals where it is not enabled).)
