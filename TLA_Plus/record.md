@@ -8,12 +8,10 @@
 strong fairness => weak fairness
 
 weak fairness:
-In terms of temporal logic this is: <> []Enabled (A) -> <> A
-Sometimes this formula is used: <> [] Enabled (A) -> <> [] A
+<>[] Enabled (A) ->  []<> A
 
 strong fairness:
-In terms of temporal logic this is: [] <> Enabled (A) -> <> A
-Sometimes this formula is used: [] <> Enabled (A) -> [] <> A
+[]<> Enabled (A) -> []<> A
 
 
 F(<>) G([]) says that there is a point in the future from which the action will always be enabled, and G F says that the action will be enabled an infinite number of times (but not necessarily continuously).---F G表示未来有一点可以始终启用动作，G F表示动作将启用无限次（但不一定连续）。
