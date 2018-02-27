@@ -6,3 +6,13 @@
     强公平性:条件原子动作一定能执行, 则为强公平性(Strong fairness relaxes the assumption that the action needs to be continuously enabled to be applied. Instead, it requires it to be enabled infinitely often (possible with intervals where it is not enabled).)
 
 strong fairness => weak fairness
+
+weak fairness:
+In terms of temporal logic this is: F G Enabled (A) -> F A
+Sometimes this formula is used: F G Enabled (A) -> G F A
+
+strong fairness:
+In terms of temporal logic this is: G F Enabled (A) -> F A
+Sometimes this formula is used: G F Enabled (A) -> G F A
+
+F G says that there is a point in the future from which the action will always be enabled, and G F says that the action will be enabled an infinite number of times (but not necessarily continuously).---F G表示未来有一点可以始终启用动作，G F表示动作将启用无限次（但不一定连续）。
