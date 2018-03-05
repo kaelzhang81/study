@@ -27,3 +27,5 @@ F(<>) G([]) says that there is a point in the future from which the action will 
 
 
 在TLA+中，使用fairness来代替liveness以避免liveness对safty的潜在错误改变。TLA+中一般为weak fairness。strong和weak是用来修饰fairness的，weak条件更苛刻也就更不公平。
+
+坏的事情不发生，不代表好的事情会发生。
