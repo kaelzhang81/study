@@ -15,3 +15,6 @@ strong fairness:
 
 
 F(<>) G([]) says that there is a point in the future from which the action will always be enabled, and G F says that the action will be enabled an infinite number of times (but not necessarily continuously).---F G表示未来有一点可以始终启用动作，G F表示动作将启用无限次（但不一定连续）。
+
+
+在TLA+中，使用fairness来代替liveness以避免liveness对safty的潜在错误改变。
