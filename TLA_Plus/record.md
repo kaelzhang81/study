@@ -1,6 +1,6 @@
-安全性(safety)是程序在执行期间不会出现异常的结果.对于顺序程序指其最终状态是正确的.对于并发程序指保证共享变量的互斥访问和无死锁出现
+安全性(safety)是程序在执行期间不会出现异常的结果（**正确性**）.对于顺序程序指其最终状态是正确的.对于并发程序指保证共享变量的互斥访问和无死锁出现
 
-活性(liveness)是程序能按预期完成它的工作.对于顺序程序指程序能正常终止.对于并发程序指每个进程能得到它所要求的服务; 或进程总能进入临界段; 或送出的消息总能到达目的进程, 活性深深受到执行机构调度策略的影响
+活性(liveness)是程序能按预期完成它的工作.对于顺序程序指程序能**正常终止**.对于并发程序指每个进程能得到它所要求的服务; 或进程**总能进入临界段(不会死锁)**; 或送出的**消息总能到达目的进程**, 活性深深受到执行机构调度策略的影响
 
 公平性(fairness)指在有限进展的假设下没有一个进程处于死等状态.
     无条件公平性:调度策略如能保证每个无条件的原子功能均能执行
@@ -37,9 +37,9 @@ while ¬(x=1) do
     (y:=y ⋆ x; x:=x−1)
     
 Partial correctness: if initially x has the
-value n and if the program terminates then
-the final value of y is n!
+value n and **if the program terminates then
+the final value of y is n!**
 
 Total correctness: if initially x has the value
-n then the program terminates and the fi-
-nal value of y is n!
+n then **the program terminates and the fi-
+nal value of y is n!**
