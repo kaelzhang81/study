@@ -29,3 +29,17 @@ F(<>) G([]) says that there is a point in the future from which the action will 
 在TLA+中，使用fairness来代替liveness以避免liveness对safty的潜在错误改变。TLA+中一般为weak fairness。strong和weak是用来修饰fairness的，weak条件更苛刻也就更不公平。
 
 坏的事情不发生，不代表好的事情会发生。
+
+# Partial correctness & Total correctness
+Example:
+y:=1;
+while ¬(x=1) do
+    (y:=y ⋆ x; x:=x−1)
+    
+Partial correctness: if initially x has the
+value n and if the program terminates then
+the final value of y is n!
+
+Total correctness: if initially x has the value
+n then the program terminates and the fi-
+nal value of y is n!
