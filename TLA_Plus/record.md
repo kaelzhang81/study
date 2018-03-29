@@ -43,3 +43,10 @@ the final value of y is n!**
 Total correctness: if initially x has the value
 n then **the program terminates and the fi-
 nal value of y is n!**
+
+
+## 蕴含
+(x=2) => (x+1=3)
+(x=2) => (x=2)\/(x>7)
+
+F=>G == ~F\/G
