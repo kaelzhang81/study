@@ -31,18 +31,18 @@ leslie lamport，微软首席科学家
 
 ## 重要事件
 
-1957年由Arthur Prior提出现代时间逻辑
-1975年Ed Ashcroft发表《Proving Assertions About Parallel Programs》，首次提出并发系统中的不变性概念
-1977年Prior提出线性时态逻辑（LTL），LTL迅速成为并发程序分析的重要工具，可轻松表达诸如互斥和无死锁之类的特性
-1980年Lamport发表《'Sometime' is Sometimes 'Not Never'》，引用次数最多的时态逻辑论文。
-1983年Lamport的《Specifying CLamportcurrent Programming Modules》论文中找到了一种实用的规范方法，该方法引入了将状态转换描述为primed和unprimed变量的布尔值函数的思想
-1990年Lamport陆续发表了一些关于TLA的论文
-1994年Lamport正式发表《The Temporal Logic of Actions》论文，该文提供了一种优雅的方式来形式化和系统化并发系统中使用的所有推理验证。
-1999年Lamport发表《Specifying Concurrent Systems with TLA+》论文。同年Yuan Yu编写用于TLA +规范的TLC模型检查器;
-2002年Lamport发布了一本完整的TLA+教科书《Specifying Systems: The TLA+ Language and Tools for Software Engineers》
-2009年推出了PlusCal规范语言
-2012年推出TLA+证明系统（TLAPS）
-2014年推出TLA+2，增加了一些额外的语言结构，并大大增加了对证明系统的语言支持。
+- 1957年由Arthur Prior提出现代时间逻辑
+- 1975年Ed Ashcroft发表《Proving Assertions About Parallel Programs》，首次提出并发系统中的不变性概念
+- 1977年Prior提出线性时态逻辑（LTL），LTL迅速成为并发程序分析的重要工具，可轻松表达诸如互斥和无死锁之类的特性
+- 1980年Lamport发表《'Sometime' is Sometimes 'Not Never'》，引用次数最多的时态逻辑论文。
+- 1983年Lamport的《Specifying CLamportcurrent Programming Modules》论文中找到了一种实用的规范方法，该方法引入了将状态转换描述为primed和unprimed变量的布尔值函数的思想
+- 1990年Lamport陆续发表了一些关于TLA的论文
+- 1994年Lamport正式发表《The Temporal Logic of Actions》论文，该文提供了一种优雅的方式来形式化和系统化并发系统中使用的所有推理验证。
+- 1999年Lamport发表《Specifying Concurrent Systems with TLA+》论文。同年Yuan Yu编写用于TLA +规范的TLC模型检查器;
+- 2002年Lamport发布了一本完整的TLA+教科书《Specifying Systems: The TLA+ Language and Tools for Software Engineers》
+- 2009年推出了PlusCal规范语言
+- 2012年推出TLA+证明系统（TLAPS）
+- 2014年推出TLA+2，增加了一些额外的语言结构，并大大增加了对证明系统的语言支持。
 
 ## 特点
 
