@@ -60,6 +60,17 @@ Invariant - a state predicate true in all reachable states
 Temporal formula - an expression containing statements in temporal logic
 ```
 
+## IDE
+TLA+的IDE是基于eclipse实现的，其包含一个带有错误和语法突出显示的编辑器，以及几个其他TLA+工具的GUI前端：
+
+- The SANY syntactic analyzer, which parses and checks the spec for syntax errors.
+- LaTeX转换器（to generate pretty-printed specs）
+- PlusCal转换器
+- TLC模型检查器
+- TLAPS证明系统
+
+这些工具统一位于TLA Toolbox中。
+
 ## 特点
 
 与其它规范说明语言相比， TLA + 具有以下几个 特点：
