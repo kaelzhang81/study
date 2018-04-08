@@ -41,9 +41,12 @@ leslie lamport，微软首席科学家
 
 ## 工业案例
 
-1. **Xbox360**：At Microsoft, a critical bug was discovered in the Xbox 360 memory module during the process of writing a specification in TLA+. TLA+ was used to write formal proofs of correctness for Byzantine Paxos and components of the Pastry distributed hash table.
-2. **AWS**： Amazon Web Services has used TLA+ since 2011. TLA+ model checking uncovered bugs in DynamoDB, S3, EBS, and an internal distributed lock manager; some bugs required state traces of 35 steps. Model checking was also used to verify aggressive optimizations. In addition, TLA+ specifications were found to hold value as documentation and design aids.
-3. **Microsoft Azure**：Azure used TLA+ to design Cosmos DB, a globally-distributed database with five different consistency models.
+1. **Xbox360**：在微软Xbox 360产品内存模块中发现了一个严重的错误。 TLA +还被用来为拜占庭式Paxos和Pastry分布式哈希表组件编写正确的证明。
+2. **AWS**： AWS从2011年开始使用TLA+. TLA +模型检查在DynamoDB，S3，EBS和内部分布式锁管理器中均检测出了难以发现的潜在错误; 一些错误需要35个步骤的状态跟踪。
+3. **Microsoft Azure**：Azur使用TLA+设计Cosmos DB, 一个具有五种不同一致性模型的全局分布式数据库。
+4. 一款以网络为中心的RTOS应用案例。
+5. 对各种分布式一致性算法（Paxos、Raft等）的正确性验证。
+5. 各种领域应用论文，例如：wimax协议验证、滚动升级验证等。
 
 ## 价值
 
