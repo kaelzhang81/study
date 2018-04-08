@@ -45,3 +45,16 @@ leslie lamport，微软首席科学家
 2. **AWS**： Amazon Web Services has used TLA+ since 2011. TLA+ model checking uncovered bugs in DynamoDB, S3, EBS, and an internal distributed lock manager; some bugs required state traces of 35 steps. Model checking was also used to verify aggressive optimizations. In addition, TLA+ specifications were found to hold value as documentation and design aids.
 3. **Microsoft Azure**：Azure used TLA+ to design Cosmos DB, a globally-distributed database with five different consistency models.
 
+## 价值
+
+1. 帮助架构师对系统行为进行清晰思考（科学视角）
+2. 分布式系统原型验证
+3. 对已有系统的正确性进行验证
+4. 对系统架构演进实现质量守护
+
+## 注意事项
+
+1. 并非银弹
+2. 对人的要求（基础数学、抽象能力、清晰思考）
+3. 与实际代码尚有一段距离
+4. 新的语言、工具的学习
