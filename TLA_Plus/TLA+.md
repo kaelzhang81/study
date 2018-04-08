@@ -16,7 +16,7 @@ TLA + 是基于动作时序逻辑TLA（Temporal Logic of Actions）加上一阶�
 
 ## 作者介绍
 
-leslie lamport是美国计算机科学家及微软首席科学家。
+Leslie Lamport是美国计算机科学家及微软首席科学家。
 
 ### 代表作
 1. TLA+
@@ -111,6 +111,11 @@ TLA+的IDE是基于eclipse实现的，其包含一个带有错误和语法突出
 2. 对人的要求（基础数学、抽象能力、清晰思考）
 3. 与实际代码尚有一段距离
 4. 新的语言、工具的学习
+
+## 学习资源
+
+1. https://lamport.azurewebsites.net/tla/tla.html
+2. http://lamport.azurewebsites.net/video/videos.html
 
 ## 参考文献
 https://alchetron.com/TLA-
