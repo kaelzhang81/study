@@ -16,7 +16,7 @@ TLA + 是基于动作时序逻辑TLA（Temporal Logic of Actions）加上一阶�
 
 ## 作者介绍
 
-leslie lamport，微软首席科学家
+leslie lamport是美国计算机科学家及微软首席科学家。
 
 ### 主要荣誉
 
@@ -30,11 +30,12 @@ leslie lamport，微软首席科学家
 - 2011年当选美国国家科学院院士。
 - 2013年荣获Jean-Claude Laprie可信计算奖&图灵奖。
 
-## 重要事件
+## 相关重要事件
 
 - 1957年由Arthur Prior提出现代时间逻辑
 - 1975年Ed Ashcroft发表《Proving Assertions About Parallel Programs》，首次提出并发系统中的不变性概念
 - 1977年Prior提出线性时态逻辑（LTL），LTL迅速成为并发程序分析的重要工具，可轻松表达诸如互斥和无死锁之类的特性
+- 1978年Lamport发表《Time, Clocks, and the Ordering of Events in a Distributed System》，该文是计算机科学史上被引用最多的文献，为“并发系统的规范与验证”研究贡献了核心原理。
 - 1980年Lamport发表《'Sometime' is Sometimes 'Not Never'》，引用次数最多的时态逻辑论文。
 - 1983年Lamport的《Specifying CLamportcurrent Programming Modules》论文中找到了一种实用的规范方法，该方法引入了将状态转换描述为primed和unprimed变量的布尔值函数的思想
 - 1990年Lamport陆续发表了一些关于TLA的论文
@@ -44,6 +45,20 @@ leslie lamport，微软首席科学家
 - 2009年推出了PlusCal规范语言
 - 2012年推出TLA+证明系统（TLAPS）
 - 2014年推出TLA+2，增加了一些额外的语言结构，并大大增加了对证明系统的语言支持。
+
+## 一些术语
+
+```
+State - an assignment of values to variables
+Behaviour - a sequence of states
+Step - a pair of successive states in a behavior
+Stuttering step - a step during which variables are unchanged
+Next-state relation - a relation describing how variables can change in any step
+State function - an expression containing variables and constants that is not a next-state relation
+State predicate - a Boolean-valued state function
+Invariant - a state predicate true in all reachable states
+Temporal formula - an expression containing statements in temporal logic
+```
 
 ## 特点
 
@@ -81,3 +96,4 @@ leslie lamport，微软首席科学家
 
 ## 参考文献
 https://alchetron.com/TLA-
+https://www.msra.cn/zh-cn/news/features/leslie-lamport-turing-20140327
