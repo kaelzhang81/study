@@ -32,8 +32,16 @@ leslie lamport，微软首席科学家
 ## 特点
 
 与其它规范说明语言相比， TLA + 具有以下几个 特点：
+
 1. 一个TLA + 模型本质上就是一条时序逻辑公式，完全由数学符号构成；
 2. 在TLA + 逻辑框架下，系统行为的规范说明和待验证性质可以统一描述；
 3. TLA + 提供了对具体模型“实现”抽象模型的简单数学定义：实现即蕴含；
 4. TLA + 是无类型的。模型的类型正确性表达为一个待验证的类型不变式（Invariant）；
 5. TLA + 既可以表达安全（Saftety）属性又可以表达活（Liveness）属性。
+
+## 工业案例
+
+1. **Xbox360**：At Microsoft, a critical bug was discovered in the Xbox 360 memory module during the process of writing a specification in TLA+. TLA+ was used to write formal proofs of correctness for Byzantine Paxos and components of the Pastry distributed hash table.
+2. **AWS**： Amazon Web Services has used TLA+ since 2011. TLA+ model checking uncovered bugs in DynamoDB, S3, EBS, and an internal distributed lock manager; some bugs required state traces of 35 steps. Model checking was also used to verify aggressive optimizations. In addition, TLA+ specifications were found to hold value as documentation and design aids.
+3. **Microsoft Azure**：Azure used TLA+ to design Cosmos DB, a globally-distributed database with five different consistency models.
+
