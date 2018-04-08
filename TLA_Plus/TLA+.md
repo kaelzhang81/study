@@ -29,6 +29,21 @@ leslie lamport，微软首席科学家
 2011年当选美国国家科学院院士。
 2013年荣获Jean-Claude Laprie可信计算奖&图灵奖。
 
+## 重要事件
+
+1957年由Arthur Prior提出现代时间逻辑
+1975年Ed Ashcroft发表《Proving Assertions About Parallel Programs》，首次提出并发系统中的不变性概念
+1977年Prior提出线性时态逻辑（LTL），LTL迅速成为并发程序分析的重要工具，可轻松表达诸如互斥和无死锁之类的特性
+1980年Lamport发表《'Sometime' is Sometimes 'Not Never'》，引用次数最多的时态逻辑论文。
+1983年Lamport的《Specifying CLamportcurrent Programming Modules》论文中找到了一种实用的规范方法，该方法引入了将状态转换描述为primed和unprimed变量的布尔值函数的思想
+1990年Lamport陆续发表了一些关于TLA的论文
+1994年Lamport正式发表《The Temporal Logic of Actions》论文，该文提供了一种优雅的方式来形式化和系统化并发系统中使用的所有推理验证。
+1999年Lamport发表《Specifying Concurrent Systems with TLA+》论文。同年Yuan Yu编写用于TLA +规范的TLC模型检查器;
+2002年Lamport发布了一本完整的TLA+教科书《Specifying Systems: The TLA+ Language and Tools for Software Engineers》
+2009年推出了PlusCal规范语言
+2012年推出TLA+证明系统（TLAPS）
+2014年推出TLA+2，增加了一些额外的语言结构，并大大增加了对证明系统的语言支持。
+
 ## 特点
 
 与其它规范说明语言相比， TLA + 具有以下几个 特点：
@@ -44,9 +59,10 @@ leslie lamport，微软首席科学家
 1. **Xbox360**：在微软Xbox 360产品内存模块中发现了一个严重的错误。 TLA +还被用来为拜占庭式Paxos和Pastry分布式哈希表组件编写正确的证明。
 2. **AWS**： AWS从2011年开始使用TLA+. TLA +模型检查在DynamoDB，S3，EBS和内部分布式锁管理器中均检测出了难以发现的潜在错误; 一些错误需要35个步骤的状态跟踪。
 3. **Microsoft Azure**：Azur使用TLA+设计Cosmos DB, 一个具有五种不同一致性模型的全局分布式数据库。
-4. 一款以网络为中心的RTOS应用案例。
-5. 对各种分布式一致性算法（Paxos、Raft等）的正确性验证。
-5. 各种领域应用论文，例如：wimax协议验证、滚动升级验证等。
+4. Compaq多处理器高速缓存一致性协议中的错误。
+5. 一款以网络为中心的RTOS应用案例。
+6. 对各种分布式一致性算法（Paxos、Raft等）的正确性验证。
+7. 各种领域应用论文，例如：wimax协议验证、滚动升级验证等。
 
 ## 价值
 
