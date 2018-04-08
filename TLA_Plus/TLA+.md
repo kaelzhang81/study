@@ -18,6 +18,13 @@ TLA + 是基于动作时序逻辑TLA（Temporal Logic of Actions）加上一阶�
 
 leslie lamport是美国计算机科学家及微软首席科学家。
 
+### 代表作
+1. TLA+
+2. Paxos算法
+3. LaTex排版系统
+4. 面包店算法
+5. 拜占庭将军问题
+
 ### 主要荣誉
 
 - 1991年入选美国国家工程院院士。
