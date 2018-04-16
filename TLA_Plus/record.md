@@ -53,9 +53,15 @@ F=>G == ~F\/G
 
 
 https://news.ycombinator.com/item?id=14221848
+
 https://arxiv.org/pdf/1603.03599.pdf
+
 https://medium.com/espark-engineering-blog/formal-methods-in-practice-8f20d72bce4f
+
 https://www.hillelwayne.com/post/modeling-deployments/
+
 https://news.ycombinator.com/item?id=8902739
+
 https://news.cnblogs.com/n/579998/#comment
+
 http://wenchao.wang/2017/11/20/%E8%81%8A%E8%81%8A-Formal-Specification-%E4%BB%8E-TLA-%E8%AE%B2%E8%B5%B7/
